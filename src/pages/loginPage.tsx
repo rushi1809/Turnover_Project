@@ -1,18 +1,18 @@
 import React from 'react';
 import Advertise from '~/components/advertise';
 import Header from '~/components/header';
-import SignupForm from '~/components/signup';
+import LogIn from '~/components/logIn';
 
-const IndexPage = () => {
+const LogInPage = () => {
   return (
     <div>
       <div>
         <Header username=""/>
         <Advertise/>
-        <SignupForm/>
+        <LogIn/>
       </div>  
     </div>
   );
 };
 
-export default IndexPage;
+export default LogInPage;
