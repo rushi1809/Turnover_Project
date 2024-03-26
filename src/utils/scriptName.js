@@ -23,4 +23,4 @@ async function generateFakeInterests() {
   }
 }
 
-generateFakeInterests();
+void generateFakeInterests();

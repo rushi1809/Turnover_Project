@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { api } from '~/utils/api';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const LogIn = () => {
   const router = useRouter();
@@ -120,7 +121,10 @@ const LogIn = () => {
         </div>
         <div className="flex items-center justify-center mt-5 ">
           <span className="mx-2 text-center text-sm text-gray-600">
-            Don't have an account?<a href="/" className="text-black hover:text-black pl-1">SIGN UP</a>
+            Don't have an account?
+            <Link href="/">
+              <a className="text-black hover:text-black pl-1">SIGN UP</a>
+            </Link>
           </span>
         </div>
       </div>

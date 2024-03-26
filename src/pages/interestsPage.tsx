@@ -6,13 +6,13 @@ import InterestsForm from '~/components/interestForm';
 
 const InterestsPage = () => {
     const router = useRouter();
-    const { userId,userEmail,userName } = router.query;
+    const { userName } = router.query;
   return (
     <div>
       <div>
         <Header username={userName}/>
         <Advertise/>
-        <InterestsForm user={{userId:userId,userEmail:userEmail}}/>
+        <InterestsForm/>
       </div>  
     </div>
   );

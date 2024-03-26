@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { api } from '~/utils/api';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const SignupForm = () => {
   const router = useRouter();
@@ -105,7 +106,10 @@ const SignupForm = () => {
         </form>
         {createUserError?.message && <span className="text-red-500 text-center">{createUserError?.message}</span>}
         <p className="mt-4 text-gray-600 text-center">
-          Have an Account? <a href="/loginPage" className="text-black hover:text-black pl-1">LOGIN</a>
+          Have an Account?{' '}
+          <Link href="/loginPage">
+            <a className="text-black hover:text-black pl-1">LOGIN</a>
+          </Link>
         </p>
       </div>
     </div>

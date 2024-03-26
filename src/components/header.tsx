@@ -1,5 +1,4 @@
 import React from 'react';
-import Advertise from './advertise';
 
 const Header = ({ username }:any) => {
   return (

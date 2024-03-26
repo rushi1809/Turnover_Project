@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 const InterestsForm = () => {
   const router = useRouter();
-  const { userId, userEmail, userName } :any = router.query;
+  const { userId } :any = router.query;
   const [selectedInterests, setSelectedInterests] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [interests, setInterests] = useState<{ id: number; name: string }[]>([]);
